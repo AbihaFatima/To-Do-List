@@ -10,7 +10,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://admin-abiha:Test123@cluster0.osxal.mongodb.net/todolistDB", {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false, useCreateIndex: true}).then(connection => { console.log('Connected successfully to MongoDB.');});
+mongoose.connect("mongodb+srv://admin-abiha:<password>@cluster0.osxal.mongodb.net/todolistDB", {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false, useCreateIndex: true}).then(connection => { console.log('Connected successfully to MongoDB.');});
 
 const itemsSchema = {
     name : String
